@@ -1,5 +1,7 @@
 # PlanetMinecraftSkinSpider
-一个用于从PlanetMinecraft爬取皮肤的Scrapy项目，包含：
+一个用于从PlanetMinecraft爬取皮肤信息的项目，计划用于皮肤原创性检查，通过爬取PlanetMinecraft海量的皮肤图片计算指纹并存入数据库，给定单个皮肤图片，可计算dhash并在库中查询是否存在记录，若有则可能为非原创。
+
+包含：
 * Scrapy爬虫项目`pm_skin`：从PlanetMinecraft爬取信息（数据库文件`scrapy.db`）
   * 皮肤标题
   * 作者
