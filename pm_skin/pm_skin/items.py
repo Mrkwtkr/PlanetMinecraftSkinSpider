@@ -3,12 +3,17 @@
 # Define here the models for your scraped items
 #
 # See documentation in:
-# https://doc.scrapy.org/en/latest/topics/items.html
+# https://doc.org/en/latest/topics/items.html
 
-import scrapy
+from scrapy import Item, Field
 
 
-class PmSkinItem(scrapy.Item):
+class PmSkinItem(Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    # name = Field()
+    title = Field()
+    author = Field()
+    date = Field()
+    raw_url = Field()
+    download_url = Field()
+    redirect_url = Field()
